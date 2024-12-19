@@ -1,0 +1,14 @@
+/* div{
+    color: orange;
+} */
+/* id는 #으로 class는 . 으로 불러옴옴 */
+.one{
+    color: blue;
+}
+.orange{
+    color: orange;
+}
+
+#name{
+    background-color: red;
+}

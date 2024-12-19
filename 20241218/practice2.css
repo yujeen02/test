@@ -1,0 +1,77 @@
+body{
+    background-color: gray;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+span{
+    color: white;
+    background-color: red;
+}
+ol{
+    color: white;
+}
+#first{
+    color: white;
+    background-color: blue;
+}
+.second{
+    color: white;
+    background-color: green;
+}
+
+/* div{
+    float: left;
+}
+.a{
+    color: red;
+}
+.b{
+    color: orange;
+}
+.c{
+    color: yellow;
+}
+.d{
+    color: green;
+}
+.e{
+    color: blue;
+}
+.f{
+    color: navy;
+}
+.g{
+    color: purple;
+} */
+ .one{
+    color: red;
+    background-color: gray;
+ }
+ .two{
+    color: orange;
+    background-color: gray; 
+}
+ .three{
+    color: yellow;
+    background-color: gray; 
+ }
+ .four{
+    color: green;
+    background-color: gray; 
+ }
+ .five{
+    color: blue;
+    background-color: gray; 
+ }
+ .six{
+    color: navy;
+    background-color: gray; 
+ }
+ .seven{
+    color: purple;
+    background-color: gray; 
+ }

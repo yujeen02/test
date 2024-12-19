@@ -1,0 +1,13 @@
+[disabled] {
+    background-color: red;
+}
+[placeholder="이름"]{
+    background-color: orange;
+}
+
+[type="password"]{
+    background-color: blue;
+}
+[value="000-0000-0000"]{
+    background-color: blue;
+}

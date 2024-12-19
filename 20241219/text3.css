@@ -1,0 +1,10 @@
+/* 하나 하기 편리 여러갠 불편 */
+[disabled] {
+    color: orange;
+}
+[value="HEROPY"]{
+    color: blue;
+}
+[type="password"]{
+    color: red;
+}

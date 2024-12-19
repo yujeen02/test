@@ -1,0 +1,45 @@
+/* .box{ 
+    width: 100%;
+   가로로 배치 
+    display: flex;
+} */
+
+/*.boxWrap{
+    max-width: 1280px;*/
+    /* 반응형
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex; */
+    /* 간격띄우기-반응형 
+    justify-content: space-between;
+}*/ 
+
+/* .red{
+    width: 50px;
+    height: 25px;
+    background-color: red;
+}
+.blue{
+    width: 50px%;
+    background-color: blue;
+}
+.black{
+    width: 50px%;
+    background-color: black;
+} */
+.boxWrap{
+    display: flex;
+}
+
+ .box{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+ }
+ .box2{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

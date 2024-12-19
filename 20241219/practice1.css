@@ -1,0 +1,15 @@
+.stripes *:nth-child(3n+1){
+    color: blue;
+    background-color: red;
+}
+
+.stripes *:nth-child(3n+2){
+    color: white;
+    background-color: orange;
+}
+
+
+.stripes *:nth-child(3n){
+    color: black;
+    background-color: yellow;
+}

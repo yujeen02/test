@@ -1,0 +1,18 @@
+/* 일치선택자 - 붙여서 사용*/
+span.orange{
+    color: orange;
+}
+/* 하위선택자 */
+div .orange{
+    color: blue;
+}
+/* 자식선택자 */
+ul>.orange{
+    color: red;
+}
+.orange+li{
+    color: aqua;
+}
+.orange~li{
+    color: aquamarine;
+}

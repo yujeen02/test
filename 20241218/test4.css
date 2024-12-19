@@ -1,0 +1,19 @@
+/* a:hover{
+    color: #03c75a;;
+} */
+
+/*  
+div:hover{
+    cursor: pointer;
+    color: red;
+} */
+
+/* 클릭하고있는동안만 
+a:active{
+    color: #03c75a;
+}*/
+
+/* 포커스되었을때 
+input:focus{
+    background-color: orange;
+}  */

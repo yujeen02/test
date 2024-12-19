@@ -1,0 +1,31 @@
+/* .fruits span:first-child{
+    color: red;
+}
+.fruits :first-child{
+    color: blue;
+}
+.fruits h3:last-child{
+    color: orange;
+} */
+
+/* .fruits *:nth-child(2n){
+    color: red;
+}
+
+.fruits *:nth-child(2n+1){
+    color: blue;
+} */
+
+/* .fruits *:nth-child(1){
+    color: red;
+}
+
+
+.fruits *:nth-child(2){
+    color: blue;
+} */
+
+/* 부정선택자 */
+.fruits *:not(span){
+    color:red;
+}
