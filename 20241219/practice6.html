@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./practice6.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 다운운 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+CO+Guides&family=Playwrite+ES+Deco+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+CO+Guides&family=Playwrite+ES+Deco+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 박스1 -->
+    <div class="box">
+        <!-- 박스2 -->
+        <div class="box1">
+            <!-- 설문조사 박스 -->
+            <div class="form"><h1>설문조사</h1><br/> 
+            </div>
+            <!-- 이름, 이메일 박스 -->
+            <div class="id">
+                이   름 
+                <br/><input placeholder="이름을 입력해 주세요." type="text" /> <br />
+                이메일 
+                <br/><input placeholder="love@gamil.com" type="text" /> <br /><br />
+            </div>
+            <!-- 나이 체크란 -->
+            <div class="age"><b>나이</b><br /><hr/>
+                <input type = "radio" name="age" value="10" checked> 10대 </input> <br />
+                <input type = "radio" name="age" value="20"> 20대 </input><br />
+                <input type = "radio" name="age" value="30"> 30대 </input><br />
+                <input type = "radio" name="age" value="40"> 40대 </input><br />
+                <input type = "radio" name="age" value="50"> 50대 </input><br />
+                <input type = "radio" name="age" value="60"> 60대 이상 </input> <br /><br />
+            </div>
+            <!-- 카테고리 설정란 -->
+            <div class="cate"> <b>카테고리</b>
+                <select name="select" id="cate"> 
+                    <option value="social">사회</option>
+                    <option value="ecnomic">경제</option>
+                    <option value="sport">스포츠</option>
+                    <option value="entertainment">예능</option>
+                    <option value="animal">동물</option>
+                </select>    
+            </div>
+            <!-- 강의 선택 -->
+            <div class="subject"><b>원하는 강의(복수응답가능합니다.)</b><br />
+                <input type = "checkbox" checked > html </input>
+                <input type = "checkbox" > javascript </input> 
+                <input type = "checkbox" > css </input><br /><br />            
+            </div>
+            <!-- 하고싶은말 및 제출버튼 -->
+            <div class="textarea"> <textarea rows="9" cols="77">하고 싶은 말을 써주세요. </textarea><br /></div>
+            <input type="button" value="제출" class="button" />
+        </div>      
+    </div>
+</body>
+</html>

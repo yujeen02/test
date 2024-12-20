@@ -1,5 +1,25 @@
-.test{
-    font-family: "Playwrite ES Deco Guides", serif;
-    font-weight: 400;
-    font-style: normal;
+.box{ 
+    width: auto;
+    height: 200px;
+    display: flex;
+    background-color: orange;
 }
+
+.red{
+    width: 200px;
+    height: 100px;
+    background-color: skyblue;
+    margin-right: 30px;
+}
+.blue{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    margin-right: 30px;
+}
+.black{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    margin-right: 30px;
+} 
