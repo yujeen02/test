@@ -1,0 +1,251 @@
+body{
+    position: relative;
+}
+.red1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+.red2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    top: 8px;
+    left: 8px;
+}
+.red3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    top: 9px;
+    left: 10px;
+}
+
+.org1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+}
+.org2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    top: 25px;
+    left: 45px;
+    z-index: 1;
+}
+.org3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    top: 27px;
+    left: 52px;
+    z-index: 1;
+}
+.org4{
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    background-color: black;
+    top: 50px;
+    left: 57px;
+}
+
+.yel1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    top: 20px;
+    left: 80px;
+}
+.yel2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    top: 40px;
+    left: 95px;
+}
+.yel3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    top: 50px;
+    left: 100px;
+}
+.yel4{
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    background-color: black;
+    top: 60px;
+    left: 100px;
+}
+.grn1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    top: 25px;
+    left: 120px;
+    z-index: 1;
+}
+.grn2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    top: 27px;
+    left: 135px;
+    z-index: 1;
+}
+.grn3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    top: 27px;
+    left: 140px;
+    z-index: 1;
+}
+.grn4{
+    position: absolute;
+    width: 6px;
+    height: 35px;
+    background-color: black;
+    top: 50px;
+    left: 137px;
+}
+.nav1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: navy;
+    top: 50px;
+    left: 150px;
+}
+.nav2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    top: 65px;
+    left: 168px;
+}
+.nav3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    top: 73px;
+    left: 176px;
+}
+.nav4{
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    background-color: black;
+    top: 90px;
+    left: 176px;
+}
+.pur1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: purple;
+    top: 28px;
+    left: 180px;
+    z-index: 1;
+}
+.pur2{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    top: 45px;
+    left: 198px;
+    z-index: 1;
+}
+.pur3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    top: 47px;
+    left: 206px;
+    z-index: 1;
+}
+.pur4{
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    background-color: black;
+    top: 50px;
+    left: 57px;
+}
+.reds{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    top: 30px;
+    left: 218px;
+}
+.orgs{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orange;
+    top: 25px;
+    left: 227px;
+    z-index: 1;
+}
+.yels{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    top: 15px;
+    left: 235px;
+}
+.grns{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    top: 10px;
+    left: 245px;
+}

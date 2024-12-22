@@ -1,0 +1,163 @@
+body{
+    background-color: white;
+    position: relative;
+    width: 1500px;
+    height: 1500px;
+}
+.contain{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    border: 10px solid black;
+}
+
+.nextbox{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    top: 0;
+    left: 570px;
+    border: 5px solid black;
+    top: 8px;
+}
+.nextblock1{
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: yellow;
+    top: 10px;
+    left: 10px;
+}
+
+.nextblock2{
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    background-color: yellow;
+    bottom: 10px;
+    left: 10px;
+}
+
+.pur1{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: purple;
+    bottom: 0px;
+    left: 0px;
+}
+.pur2{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    bottom: 0px;
+}
+.pink1{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: hotpink;
+    bottom: 50px;
+    left: 50px;
+}
+.pink2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: hotpink;
+    bottom: 0px;
+    left: 150px;
+}
+.orange{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    background-color: orange;
+    bottom: 0px;
+    left: 200px;
+}
+
+.skyblue1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    bottom: 0px;
+    left: 300px;
+}
+.skyblue2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    bottom: 0px;
+    left: 400px;
+}
+
+.b1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    bottom: 150px;
+    left: 200px;
+}
+.b2{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: skyblue;
+    bottom: 200px;
+    left: 100px;
+}
+.b3{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: skyblue;
+    bottom: 300px;
+    left: 50px;
+}
+.b4{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: skyblue;
+    top: 50px;
+    left: 100px;
+}
+.b5{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    top: 50px;
+    left: 150px;
+}
+.b6{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: skyblue;
+    top: 100px;
+    right: 50px;
+} 
+.b7{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    background-color: skyblue;
+    top: 150px;
+    right: 150px;
+}
+.b8{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: skyblue;
+    top: 250px;
+    right: 50px;
+}
