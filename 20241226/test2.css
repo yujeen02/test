@@ -1,0 +1,10 @@
+body{
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.table{
+    padding: 50px;
+    vertical-align: middle;
+}
