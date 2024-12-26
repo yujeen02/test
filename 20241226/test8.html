@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 화살표 함수
+        // function say(){
+        //     //여기에 함수 실행시 동작을 넣음 
+        //     console.log("안녕하세요.");
+        // }
+        
+        /* (): 매개변수
+        const sayHello = ()=>{
+            // 여기에 함수 실행시 동작을 넣음
+        };*/
+
+        // const sayHello = (name, age)=>{ //name='남생이'
+        //     console.log(`제 이름은 ${name} 입니다. 나이는 ${age}입니다!`);
+        // }; 
+
+        // const sayHello = (number1, number2)=>{ 
+        //     return number1 + number2;
+        // }; 
+        // console.log(sayHello(5,10));
+
+        const sayHello = (number1, number2, type) => {
+            const plus = number1+ number2;
+            const m = number1 - number2;
+            const x = number1 * number2;
+            const n = number1 / number2;
+
+            if (type === "+") {
+                return plus;
+            }
+
+            if (type === "-") {
+                return m;
+            }
+        };
+
+        console.log(sayHello(10, 5, "+"));
+
+        
+    </script>
+</head>
+<body>
+    <!-- 온클릭 함수 -->
+     <!-- <button onclick="sayHello('남생이', 10)">눌러!</button>
+     <button onclick="sayHello('김밥', 15)">눌러2!</button> -->
+</body>
+</html>
