@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./practice3.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function calc() {
+            // 1. 값1 input의 value 가져오기 및 Number로 형 변환
+            const number1 = Number(document.getElementById("num1-input").value);
+            // 2. 값2 input의 value 가져오기 및 Number로 형 변환
+            const number2 = Number(document.getElementById("num2-input").value);
+            // 3. 연산자 input의 value 가져오기
+            const op = document.getElementById("operation").value;
+            // 4. 조건문 이용하여 연산 처리 하기. 
+            let result = 0;
+            switch(op) {
+                case '+':
+                    result = number1 + number2;
+                    break;
+                case '-':
+                    result = number1 - number2;
+                    break;
+                case 'x':
+                    result = number1 * number2;
+                    break;
+                case '/':
+                    result = number1 / number2;
+                    break;
+                default:
+                    alert("유효하지 않은 연산자입니다. (+, -, x, / 중 하나를 입력하세요)");
+                    return;    
+            }
+            // 5. 4의 결과 값을 결과 input 의 value에 집어넣기.
+            document.getElementById("result").value = result;
+        }
+
+        function reset() {
+            document.getElementById("num1-input").value = "";
+            document.getElementById("num2-input").value = "";
+            document.getElementById("operation").value = "";
+            document.getElementById("result").value = "";
+        }
+
+</script>
+<body>
+    <div>
+        값1: <input type="text" id="num1-input" /> <br />
+    </div>
+    <div>
+        값2: <input type="text" id="num2-input" /> <br />
+    </div>
+    <div>
+        연산자: <input type="text" id="operation" /> <br />
+    </div>
+    <div>
+        결과: <input type="text" id="result" /> <br /><br />
+    </div>
+    <div class="bt">
+        <div class="calbt">
+            <input type="button" value="계산하기" onclick="calc()" />
+        </div>
+        <div class="rsbt">
+            <input type="button" value="초기화" onclick="reset()" /> <br />
+        </div>
+    </div>
+</body>
+</html>

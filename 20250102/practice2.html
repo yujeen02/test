@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./practice2.css" /> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="left">
+    <div>
+      날짜: <input type="text" id="str1-input" /> <br />
+    </div>
+    <div>
+      내용: <input type="text" id="str2-input" /> <br />
+    </div>
+    <div class="bt">
+      <input type="button" value="작성" onclick="schedule()" />
+    </div>
+  </div>
+  <div class="right">
+    <h1>2025년 1월 달력</h1>
+    <table>
+      <thead>
+        <tr>
+          <th class="sunday">일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th class="saturday">토</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body">
+      </tbody>
+    </table>
+  </div>
+  <script>
+    function generateCalendar(year, month) {
+      const tbody = document.getElementById('calendar-body');
+      tbody.innerHTML = ''; // 초기화
+
+      const firstDay = new Date(year, month - 1, 1).getDay(); // 첫날 요일
+      const lastDate = new Date(year, month, 0).getDate(); // 마지막 날짜
+
+      let date = 1;
+
+      // 6주 기준으로 행 생성
+      for (let i = 0; i < 6; i++) {
+        const row = document.createElement('tr');
+
+        for (let j = 0; j < 7; j++) {
+          const cell = document.createElement('td');
+
+          if (i === 0 && j < firstDay || date > lastDate) {
+            cell.innerHTML = '';
+          } else {
+            cell.innerHTML = date;
+            cell.id = `day-${date}`; // 각 날짜에 고유 ID 추가
+
+            // 스타일 지정
+            if (j === 0) cell.classList.add('sunday'); // 일요일
+            if (j === 6) cell.classList.add('saturday'); // 토요일
+
+            date++;
+          }
+          row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+        // 마지막 날짜에 도달했으면 종료
+        if (date > lastDate) break;
+      }
+    }
+    // 2025년 1월 달력 생성
+    generateCalendar(2025, 1);
+
+    function schedule() {
+      // 날짜와 내용 입력값 가져오기
+      const contentDate = document.getElementById("str1-input").value.trim();
+      const content = document.getElementById("str2-input").value.trim();
+
+      // 해당 날짜 셀 찾기
+      const cell = document.getElementById(`day-${contentDate}`);
+      if (cell) {
+        
+        // 삭제
+        cell.innerHTML = contentDate;
+
+        // 날짜 셀 아래에 내용 추가
+        const eventDiv = document.createElement("div");
+        eventDiv.className = "event";
+        eventDiv.textContent = content;
+        eventDiv.style.color = "black";
+        cell.appendChild(eventDiv); // 날짜 셀에 내용 추가
+        document.getElementById("str1-input").value = "";
+        document.getElementById("str2-input").value = "";
+      
+      } else {
+        alert("해당 날짜를 찾을 수 없습니다.");
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

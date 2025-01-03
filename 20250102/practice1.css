@@ -1,0 +1,35 @@
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+img{
+    margin-top: 120px;
+    height: 500px;
+    width: 500px;
+}
+
+.wrap1{
+    height: 700px;
+    width: 700px;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 30%;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    margin: 50px;
+    margin-left: 130px;
+}
+.btns1{
+    background-color: black;
+    color: beige;
+    width: 80px;
+    margin-left: 20px;
+}
+

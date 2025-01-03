@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:center;
+}
+table {
+width: 500px;
+height: 700px;
+margin: 0 auto;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+th {
+background-color: #f4f4f4;
+}
+.sunday {
+color: red;
+}
+.saturday {
+color: blue;
+}
+.left{
+    justify-content: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./practice1.css" />  
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap1">
+            <img src="image/스크린샷 2025-01-02 164137.png" />
+        </div>
+        <div class = "btns">
+            <div class="btns1" onclick="change('사과')">사과</div>
+            <div class="btns1" onclick="change('바나나')">바나나</div>
+            <div class="btns1" onclick="change('포도')">포도</div>
+            <div class="btns1" onclick="change('복숭아')">복숭아</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let img = "";
+    const change = (type) => {
+
+        if(type === '사과'){
+            document.querySelector("img").src="https://health.chosun.com/site/data/img_dir/2023/06/20/2023062002262_0.jpg"; 
+        } else if (type === '바나나') {
+            document.querySelector("img").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLkntanSrcb8EKzr501R_rVBBf4iU0r-YJfA&s"; 
+        } else if (type === '포도') {
+            document.querySelector("img").src="https://img.segye.com/content/image/2017/08/30/20170830515039.jpg"; 
+        } else {
+            document.querySelector("img").src="https://www.healthweek.co.kr/boardImage/healthweek/20200827/MC4xMjIyMTIwMCAxNTk4NTE2NjA5.jpeg"; 
+        }
+    };
+</script>
+</html>

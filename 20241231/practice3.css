@@ -1,0 +1,8 @@
+.bt{
+    display: flex;
+    width: 200px;
+    position: relative;
+}
+.rsbt{
+    padding-left: 10px;
+}

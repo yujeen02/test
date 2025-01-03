@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 일반 while문과의 차이점
+        // 최초 한번은 무조건 do 안에 구문을 실행시키게 됨
+        // 그 이후부터는 while의 조건에 따라 실행 여부 결정
+        // let j = 0; //초기화
+        // do {
+        //     console.log(j + "번째 안녕하세요."); // 반복하고자 하는 명령문
+        //     j++;
+        // }
+        // while(j < 10)
+
+        //break; continue;
+        //반복문 내에서 많이 쓰이는 키워드 중 하나.
+
+        // for(let i = 1; i < 10; i++) {
+        //     if(i % 3 === 0) break; // 이 순간에 반복문을 완전히 깬다
+        //     console.log("break 확인:", i)
+        // }//break 만나면 이 지점으로 옴 > 다음 줄 코드 읽음
+
+        //짝수만 출력
+
+        // for(let i = 0; i < 10; i++) {
+        //     if(i % 2 !== 0) console.log(i);
+        //      =
+        //     if(i % 2 !== 0) continue; // 이 순간에 다음 반복으로 넘긴다.
+        //     console.log(i)
+        // //continue 만나면 이 지점으로 옴 > for문으로 다시 들어감    
+        // }
+
+        // for문의 배열 탐색 방법
+        // for-of : 배열의 반복에서 많이 쓰임. for문의 변형
+        const fruits = ["apple", "banana", "grape", "melon"];
+        for(let i = 0; i < fruits.length; i++){
+            console.log("for문", fruits[i]);
+        }
+
+        // for(const1+변수이름만들어서+of+존재하는(탐색하고자하는) 배열)
+        for(const fru of fruits){
+            console.log("for-of문", fru);
+        }
+
+        // for-in
+        const object = { a: 1, b: 2, c: 3 };
+
+        for (const property in object) {
+            // 첫번째 : property = "a";
+            // 두번째 : property = "b";
+            // 세번째 : property = "c";
+            console.log(`${property}: ${object[property]}`);
+        }                // 속성의 이름 a,b,c : 속성 1,2,3
+    </script>
+</body>
+</html>

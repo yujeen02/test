@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // 실습 2번 힌트!
+    // 번호에 사용할 변수 선언. (전역변수가 되어야 함!)
+    let num = 4;
+    function addComment() {
+        // 1. 작성자 input 의 value 가져오기!
+        const writer = document.getElementById("str1-input").value.trim();
+        
+        // 2. 내용 input의 value 가져오기!
+        const content = document.getElementById("str2-input").value.trim();
+        
+        // 3. Date 객체를 이용하여 현재 시간 가져오기! 
+        const now = new Date();
+        
+        // 3-1. Date 객체의 메소드 이용하여 날짜 및 시간 이쁘게 저장!
+        const formattedDate = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}`;
+
+        // 4. tr 태그 만들기
+        const tr = document.createElement("tr");
+
+        // 5. td 태그 4개 만들기 및 td 태그 내부에 텍스트 추가하기.
+        const tdNum = document.createElement("td");
+        tdNum.textContent = num; // 번호 추가
+
+        const tdWriter = document.createElement("td");
+        tdWriter.textContent = writer; // 작성자 추가
+
+        const tdContent = document.createElement("td");
+        tdContent.textContent = content; // 내용 추가
+
+        const tdDate = document.createElement("td");
+        tdDate.textContent = formattedDate; // 작성일 추가
+
+        // 6. 4번에서 만든 tr 태그에 5번에서 만든 td 태그 4개 추가하기
+        tr.appendChild(tdNum);
+        tr.appendChild(tdWriter);
+        tr.appendChild(tdContent);
+        tr.appendChild(tdDate);
+
+        // 7. table 태그에 tr 태그 추가하기.
+        document.getElementById("tbody").appendChild(tr);
+
+        // 8. num 변수 +1 하기!
+        num++;
+
+        // 입력 필드 초기화
+        document.getElementById("str1-input").value = "";
+        document.getElementById("str2-input").value = "";
+    }
+
+</script>
+<body>
+    <h1>방명록</h1>
+    <div>
+        작성자: <input type="text" id="str1-input" /> <br />
+    </div>
+    <div>
+        내용: <input type="text" id="str2-input" /> <br />
+    </div>
+    <div class="bt">
+        <input type="button" value="작성" onclick="addComment()" />
+    </div>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>작성자</th>
+                <th>내용</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>1</td>
+                <td>김규리</td>
+                <td>여러분 반가워요</td>
+                <td>2022-7-2 15 : 3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>김규리</td>
+                <td>오늘 수업도 열심히 해봐요</td>
+                <td>2022-7-2 15 : 3</td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>홍길동</td>
+                <td>안뇽!</td>
+                <td>2022-7-2 15 : 4</td> 
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

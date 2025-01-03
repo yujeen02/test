@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = prompt("나이를 입력하세요.")
+        if (age >= 20) { // 조건1
+            console.log("성인입니다.")
+        } else if(age >= 17 ) { // 조건2
+            // 조건 1을 만족하지 않고, 조건 2를 만족할 경우에 실행
+            console.log("고등학생입니다.")
+        } else if(age >= 14 ) { // 조건2
+            // 조건 1을 만족하지 않고, 조건 2를 만족할 경우에 실행
+            console.log("중학생입니다.")
+        } else if(age >= 8 ) { // 조건2
+            // 조건 1을 만족하지 않고, 조건 2를 만족할 경우에 실행
+            console.log("초등학생입니다.")
+        } else if(age >= 0){
+            // 조건1,2 둘다 만족하지 않을 경우에 실행
+            console.log("유아입니다.")
+        }
+    </script>
+</body>
+</html>

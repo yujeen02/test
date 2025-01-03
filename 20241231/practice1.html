@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [];
+        for(let nums = 1; nums<=100; nums++) {
+            arr.push(nums);
+        }
+        console.log(arr)
+
+        // for 반복문
+        var sum = 0;
+        for(let i = 0; i < arr.length; i++) {
+            sum += arr[i];   
+        }
+        console.log(sum)
+
+        // for of 반복문
+        var sum1 = 0;
+        for(let num of arr) {
+            sum1 += num;
+        }
+        console.log(sum1)
+
+        // for each 반복문
+        var sum2 = 0;
+        arr.forEach((num) => {
+            sum2+=num;
+        });
+        console.log(sum2)
+    </script>
+</body>
+</html>
