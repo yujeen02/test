@@ -1,0 +1,35 @@
+.header{
+    height: 50px;
+    background-color: skyblue;
+}
+
+.background{
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    div{
+        height: 50px;
+        align-content: center;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+}
+
+.header1{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .background{
+        display: none;
+    }
+    .header1{
+        display: block;
+        div{
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}
+
